@@ -3,8 +3,8 @@
         { "library-name": "Internet Radio", "library-enabled": "true"}
     ],
     "dlna-stations": [
-        { "url": "https://0n-60s.radionetz.de/0n-60s.mp3", "name": "0n Radio - 60s", "mime" : "audio/mpeg" },
-        { "url": "https://0n-70s.radionetz.de/0n-70s.mp3", "name": "0n Radio - 70s", "mime" : "audio/mpeg" }
+        { "url": "https://stream.radio357.pl/[osobisty_url]", "name": "Radio 357 https", "mime" : "audio/aac" },
+        { "url": "http://live.r357.eu/[osobisty_url]", "name": "Radio 357 http", "mime" : "audio/aac" }
     ]
 }
 
