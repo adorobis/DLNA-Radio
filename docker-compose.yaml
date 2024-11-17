@@ -1,0 +1,20 @@
+networks:
+  hostlan:
+    driver: macvlan
+    driver_opts:
+      parent: enp1s0
+      gateway: 10.144.1.1
+    ipam:
+      config:
+        - subnet: 10.144.1.0/24
+services:
+  dlnaradio:
+    container_name: dlnaradio
+    image: "debian:stable-slim"
+    restart: unless-stopped
+    tty: true  # Keeps the container running
+    stdin_open: true  # Allows interaction with the container
+    privileged: true
+    networks:
+      hostlan:
+        ipv4_address: 10.144.1.5
